@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Example</title>
+        <!-- Logo -->
+        <link rel="icon" href="https://picsum.photos/200">
 
-        <!-- Styles -->
+        <!-- Load Tailwind -->
         @vite('resources/css/app.css')
 
     </head>
@@ -15,6 +17,5 @@
        <p class="text-[52px] font-SourceSerifPro">Source Serif Pro</p>
        <p class="text-[52px] font-SourceSansPro">Source Sans Pro</p>
        <p class="text-[52px] font-Inter">Inter</p>
-
     </body>
 </html>
