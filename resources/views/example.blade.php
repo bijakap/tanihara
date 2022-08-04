@@ -14,5 +14,7 @@
        <p>test pake Tailwind</p>
        <p class="text-[52px] font-SourceSerifPro">Source Serif Pro</p>
        <p class="text-[52px] font-SourceSansPro">Source Sans Pro</p>
+       <p class="text-[52px] font-Inter">Inter</p>
+
     </body>
 </html>

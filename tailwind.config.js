@@ -10,6 +10,7 @@ module.exports = {
       fontFamily : {
         'SourceSerifPro' : ['Source Serif Pro'],
         'SourceSansPro' : ['Source Sans Pro'],
+        'Inter' : 'Inter'
       }
     },
   },
