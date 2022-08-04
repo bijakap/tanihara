@@ -6,7 +6,12 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        'SourceSerifPro' : ['Source Serif Pro'],
+        'SourceSansPro' : ['Source Sans Pro'],
+      }
+    },
   },
   plugins: [],
 }

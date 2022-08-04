@@ -6,19 +6,13 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
         <!-- Styles -->
         @vite('resources/css/app.css')
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
     </head>
     <body class="bg-red-200">
-       <p>test aja</p>
+       <p>test pake Tailwind</p>
+       <p class="text-[52px] font-SourceSerifPro">Source Serif Pro</p>
+       <p class="text-[52px] font-SourceSansPro">Source Sans Pro</p>
     </body>
 </html>
