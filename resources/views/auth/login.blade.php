@@ -10,7 +10,7 @@
 
         <!-- Load Tailwind -->
         @vite('resources/css/app.css')
-
+ 
     </head>
     <body class="bg-white">
       <div class="flex">
@@ -51,7 +51,7 @@
               <div class="border-b w-full self-center">
 
               </div>
-              <p class="w-full inline whitespace-nowrap mx-2 text-[#888888] text-[17px] leading-[21px] font-normal">or continue with</p>
+              <p class="w-full whitespace-nowrap mx-2 text-[#888888] text-[17px] leading-[21px] font-normal">or continue with</p>
               <div class="border-b w-full self-center">
 
               </div>
