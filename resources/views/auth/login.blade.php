@@ -56,7 +56,7 @@
             {{-- phonenumber --}}
             <div id="container-phonenumber" class="hidden w-[320px]">
               <p class="font-normal text-[54px] leading-[64px] pb-[10px]">Login</p>
-              <div  class="pt-[20px] mb-5 flex flex-col gap-[10px] font-SourceSansPro">
+              <div class="pt-[20px] mb-5 flex flex-col gap-[10px] font-SourceSansPro">
                 <label class="text-[17px] leading-[21px] font-normal">Enter Phone Number</label>
                 <input 
                   type="text" 
@@ -65,6 +65,16 @@
                   class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
                 >
                 <button class="flex justify-center w-full bg-[#06AA51] text-white font-bold rounded-[13px] py-3" id="sign-in-button">Send OTP</button>
+              </div>
+              <div id="container-otp" class="pt-[20px] mb-5 hidden flex-col gap-[10px] font-SourceSansPro">
+                <label class="text-[17px] leading-[21px] font-normal">Enter OTP</label>
+                <input 
+                  type="text" 
+                  name="OTP" 
+                  placeholder=""
+                  class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
+                >
+                <button class="flex justify-center w-full bg-[#06AA51] text-white font-bold rounded-[13px] py-3" onclick="verifyOTP()">Konfirmasi OTP</button>
               </div>
             </div>
             {{-- end bg-[#194b30] text-gray-300 ||  bg-[#06AA51] text-white--}}
@@ -238,6 +248,7 @@
                     // alert the user
                     alert('Verification code sent!!! Please check your phone.')
                     //show verification code input section and hide phone number section
+                    $("#container-otp").removeClass("hidden").addClass("flex")
                     
                 }).catch((error) => {
                     //If signInWithPhoneNumber results in an error, reset the reCAPTCHA so the user can try again:
@@ -252,7 +263,7 @@
         window.verifyOTP = function() {
             //get the verification code entered by the user
             // const code = $("#verification_code").val();
-            const code = 123456
+            const code = $('input[name="OTP"]').val();
 
             confirmationResult.confirm(code).then((result) => {
                 //if successful notify the user

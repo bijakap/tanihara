@@ -21,4 +21,6 @@ $("#back-button").click(() => {
   $("#menu-login").removeClass("hidden").addClass("block")
 
   $("#forget-password").removeClass("hidden").addClass("block")
+
+  $("#container-otp").removeClass("flex").addClass("hidden")
 })
