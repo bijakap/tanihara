@@ -10,7 +10,9 @@
 
         <!-- Load Tailwind -->
         @vite('resources/css/app.css')
- 
+        <!-- Load Config Firebase -->
+        <script type="module" src="{{ asset('assets/js/firebase_config.js') }}"></script>
+
     </head>
     <body class="bg-white">
       <div class="flex">
@@ -20,8 +22,8 @@
             <p class="font-semibold text-[42px] leading-[53px]">Care for your plant</p> 
           </div>
         </div>
-        <div class="w-1/2 flex items-center justify-center ">
-          <form class="font-SourceSerifPro w-[320px]">
+        <div class="w-1/2 flex items-center justify-center">
+          <form class="font-SourceSerifPro w-[320px]" method="POST" action="{{ url('login') }}">
             @csrf
             <p class="font-normal text-[54px] leading-[64px] pb-[10px]">Login</p>
             <div class="pt-[20px] flex flex-col gap-[10px] font-SourceSansPro">
@@ -76,6 +78,8 @@
           </form>
         </div>
 
-      </div>
+      </div>  
+      
+
    </body>
 </html>

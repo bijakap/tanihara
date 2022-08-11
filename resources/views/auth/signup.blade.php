@@ -11,6 +11,11 @@
         <!-- Load Tailwind -->
         @vite('resources/css/app.css')
 
+
+        <!-- Load Config Firebase -->
+        <script type="text/javascript" src="{{ asset('assets/js/firebase_config.js') }}"></script>
+
+
     </head>
     <body class="bg-white">
       <div class="flex">
@@ -23,7 +28,7 @@
           </div>
         </div>
         <div class="w-1/2 flex items-center justify-center ">
-          <form class="font-SourceSerifPro w-[320px]">
+          <form class="font-SourceSerifPro w-[320px]" method="POST" action="{{ url('register') }}">
             @csrf
             <p class="font-normal text-[54px] leading-[64px] pb-[10px]">Register</p>
             <div class="pt-[20px] flex flex-col gap-[10px] font-SourceSansPro">
@@ -47,7 +52,7 @@
             <div class="pt-[20px] flex flex-col gap-[10px] font-SourceSansPro">
               <label class="text-[17px] leading-[21px] font-normal">Phone Number</label>
               <input 
-                type="number" 
+                type="text" 
                 name="phonenumber" 
                 placeholder="name@gmail.com"
                 class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
@@ -66,7 +71,7 @@
               <label class="text-[17px] leading-[21px] font-normal">Confirm Password</label>
               <input 
                 type="password" 
-                name="confirm-password" 
+                name="password_confirmation" 
                 placeholder="••••••••••••"
                 class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
               >

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FirebaseController;
+use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('example');
-});
+Route::get('/', [ViewController::class, 'index']);
+Route::get('login', [ViewController::class, 'loginView']);
+Route::post('login', [FirebaseController::class, 'login']);
+Route::get('register', [ViewController::class, 'registerView']);
+Route::post('register', [FirebaseController::class, 'signUp']);
 
-Route::get('/login', function () {
-    return view('auth/login');
-});
-
-Route::get('/register', function () {
-    return view('auth/signup');
+Route::get('test', function (){
+  return view('auth/test');
 });
