@@ -54,7 +54,7 @@
               <input 
                 type="text" 
                 name="phonenumber" 
-                placeholder="name@gmail.com"
+                placeholder="+62xxxxxx"
                 class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
               >
             </div>
@@ -78,7 +78,7 @@
             </div>
             <button type="submit" class="flex justify-center w-full bg-[#06AA51] text-white font-bold rounded-[13px] py-3 mt-5">Login</button>
             <div class="text-center text-[17px] leading-[21px] py-[30px]">
-              <p>Already have an account? <a href="#" class="text-[#06AA51]">Login here?</a> </p>
+              <p>Already have an account? <a href="{{ url("/login") }}" class="text-[#06AA51]">Login here?</a> </p>
             </div>
           </form>
         </div>
