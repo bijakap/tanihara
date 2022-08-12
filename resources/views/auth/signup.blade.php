@@ -76,7 +76,7 @@
                 class="py-[5px] px-[10px] rounded-lg border border-[#B5B5B5] outline-none"
               >
             </div>
-            <button type="submit" class="flex justify-center w-full bg-[#06AA51] text-white font-bold rounded-[13px] py-3 mt-5">Login</button>
+            <button type="submit" class="flex justify-center w-full bg-[#06AA51] text-white font-bold rounded-[13px] py-3 mt-5">Daftar</button>
             <div class="text-center text-[17px] leading-[21px] py-[30px]">
               <p>Already have an account? <a href="{{ url("/login") }}" class="text-[#06AA51]">Login here?</a> </p>
             </div>

@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Laravolt\Avatar\Facade as Avatar;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+
+use Illuminate\Support\Facades\Session;
 
 
 class FirebaseController extends Controller
@@ -63,9 +67,20 @@ class FirebaseController extends Controller
     public function login(Request $request){
         try {
             $signInResult = $this->auth->signInWithEmailAndPassword($request->email, $request->password);
-            dd($signInResult);
+            
+            $user = new User($signInResult->data());
+            //uid Session
+            $loginuid = $signInResult->firebaseUserId();
+            Session::put('uid',$loginuid);
+            
+            return redirect("/auth");
         } catch (\Throwable $e) {
             dd($e->getMessage());
         }
+    }
+
+    public function flushSession(){
+        Session::flush();
+        return redirect("/");
     }
 }

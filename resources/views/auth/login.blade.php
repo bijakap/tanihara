@@ -159,7 +159,7 @@
         });
         //authenticate app communication to firebase
         const auth = getAuth(app);
-        auth.languageCode = 'en';
+        auth.languageCode = 'id';
 
         // Facebook Trigger
         window.loginFacebook = () => {
@@ -185,6 +185,8 @@
             const credential = FacebookAuthProvider.credentialFromError(error);
 
             // ...
+
+            console.log(errorMessage)
           });
         }
 
@@ -196,6 +198,7 @@
               const token = credential.accessToken;
               // The signed-in user info.
               const user = result.user;
+              console.log(user)
               // ...
             }).catch((error) => {
               // Handle Errors here.
@@ -206,6 +209,8 @@
               // The AuthCredential type that was used.
               const credential = GoogleAuthProvider.credentialFromError(error);
               // ...
+
+              console.log(errorMessage)
             });
         }
         
@@ -269,6 +274,7 @@
                 //if successful notify the user
                 alert('Code verification successfull!!! Awesome!')
                 const user = result.user;
+                console.log(user);
                 //hide the verification input section
                 $("#verification_input").hide();
                 $("#verification_code").val("");
