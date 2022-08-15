@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ViewController extends Controller
 {
     public function index(){
-        return view('example');
+        return view('landing');
     }
 
     public function loginView(){
