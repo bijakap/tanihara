@@ -13,9 +13,9 @@
 
     </head>
     <body class="bg-red-200">
-       <p>test pake Tailwind</p>
-       <p class="text-[52px] font-SourceSerifPro">Source Serif Pro</p>
-       <p class="text-[52px] font-SourceSansPro">Source Sans Pro</p>
-       <p class="text-[52px] font-Inter">Inter</p>
+       <p>test auth page</p>
+       <a href="/flush">
+        Click to flush session
+       </a>
     </body>
 </html>

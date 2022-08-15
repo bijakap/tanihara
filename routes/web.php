@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\FirebaseController;
+use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +15,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('example');
+Route::get('/', [ViewController::class, 'index']);
+Route::get('login', [ViewController::class, 'loginView'])->name('login');
+Route::post('login', [FirebaseController::class, 'login']);
+Route::get('register', [ViewController::class, 'registerView']);
+Route::post('register', [FirebaseController::class, 'signUp']);
+
+Route::get('test', function (){
+  return view('auth/test');
 });
 
-Route::get('/login', function () {
-    return view('auth/login');
-});
+// cant access link if not login
+Route::get('/auth', function () {
+  // Only authenticated users may access this route...
+  return view('testauth');
+})->middleware('fireauth');
 
-Route::get('/register', function () {
-    return view('auth/signup');
-});
+
+// test flush session
+Route::get('/flush', [FirebaseController::class, 'flushsession']);
