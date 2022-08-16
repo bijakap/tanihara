@@ -11,23 +11,23 @@
 </head>
 <body>
     <!-- Header Start -->
-  <nav class="flex items-center justify-between flex-wrap bg-hijau px-6 py-3">
+  <nav class="flex items-center justify-between flex-wrap bg-[#06AA51] px-6 py-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <span class="font-bold text-xl tracking-tight">Logo</span>
     </div>
     
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-center text-sm lg:flex-grow">
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:font-bold mr-4 px-6 text-xl">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           Home
         </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:font-bold mr-4 px-6 text-xl">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           Measure
         </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:font-bold mr-4 px-6 text-xl">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           History
         </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:font-bold mr-4 px-6 text-xl">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           Calculator
         </a>
       </div>
