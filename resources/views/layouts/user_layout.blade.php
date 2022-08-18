@@ -23,10 +23,10 @@
     
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-center text-sm lg:flex-grow">
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
+        <a href="/home" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           Home
         </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
+        <a href="/measure" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
           Measure
         </a>
         <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white font-SourceSerifPro hover:font-bold mr-4 px-6 text-xl">
@@ -45,7 +45,7 @@
         <div id="dropdown-content" class=" absolute bg-white rounded-2xl p-4 whitespace-nowrap translate-y-5 -translate-x-20 hidden flex-col gap-4 font-SourceSansPro text-[20px] leading-[25px] font-normal" style="box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1)">
           <a href="#" class="hover:text-gray-900">Profile</a>
           <a href="#" class="hover:text-gray-900">Notification</a>
-          <a href="#" class="hover:text-gray-900">Logout</a>
+          <a href="/logout" class="hover:text-gray-900">Logout</a>
         </div>
       </div>
     </div>
