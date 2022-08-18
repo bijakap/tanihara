@@ -163,6 +163,7 @@ return [
         // firebase
         Kreait\Laravel\Firebase\ServiceProvider::class,
         Laravolt\Avatar\ServiceProvider::class,
+        ConsoleTVs\Charts\ChartsServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,

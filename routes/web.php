@@ -21,14 +21,15 @@ Route::post('login', [FirebaseController::class, 'login']);
 Route::get('register', [ViewController::class, 'registerView']);
 Route::post('register', [FirebaseController::class, 'signUp']);
 
-Route::get('test', function (){
-  return view('auth/test');
-});
+
+Route::get('home', [ViewController::class, 'viewHome']);
+Route::get('measure', [ViewController::class, 'viewMeasure']);
+
 
 // cant access link if not login
 Route::get('/auth', function () {
   // Only authenticated users may access this route...
-  return view('testauth');
+  return view('user.home');
 })->middleware('fireauth');
 
 
