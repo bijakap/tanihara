@@ -31,4 +31,12 @@ class ViewController extends Controller
     public function viewMeasure(){
         return view('user.measure');
     }
+
+    public function viewNotification(){
+        return view('user.notification');
+    }
+
+    public function viewProfile(){
+        return view('user.profile');
+    }
 }

@@ -24,6 +24,10 @@ Route::post('register', [FirebaseController::class, 'signUp']);
 
 Route::get('home', [ViewController::class, 'viewHome']);
 Route::get('measure', [ViewController::class, 'viewMeasure']);
+Route::get('notification', [ViewController::class, 'viewNotification']);
+Route::get('profile', [ViewController::class, 'viewProfile']);
+
+
 
 
 // cant access link if not login
