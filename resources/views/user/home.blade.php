@@ -96,6 +96,7 @@
       <p class="font-SourceSansPro text-[38px] leading-[48px] font-normal">Weekly report</p>
       <div class="flex gap-[80px] justify-between">
         <div class="w-1/2">
+          {{-- still bug --}}
           {!! $chart->container() !!}
         </div>
         <div class="w-1/2">
