@@ -7,20 +7,18 @@
 @endsection
 
 @section('container')
-  <section class="mt-[50px] mx-[175px]">
-    <p class="font-semibold text-[42px] leading-[53px] font-SourceSerifPro text-[#10733D]">Notification</p>
-    
-    <div class="mt-[40px]">
-      @for ($i =1; $i <= 1; $i++)
-      <div class="bg-white rounded-[20px] px-[50px] py-[30px] font-SourceSansPro text-[24px] leading-[25px] mb-[30px]" style="box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1)">
-        <p class="font-semibold mb-[6px]">Help our web to improve!</p>
-        <p class="font-normal">Give us your feedbacks by clicking this notification</p>
+  <section class="flex justify-center items-center h-[80vh]">
+    <div>
+      <img class="min-h-[190px] min-w-[190px] object-cover rounded-full" src="https://picsum.photos/200"/>
+      <p class="text-center mt-[24px] font-SourceSerifPro text-[#10733D] text-[42px] leading-[53px] font-semibold">Nama User</p>
+      <p class="text-center font-SourceSansPro text-[#10733D] text-[22px] leading-[28px] font-normal">EmailUser@gmail.com</p>
+      <div class="flex justify-center mt-[30px]">
+        <a href="#" class="bg-[#06AA51] py-3 px-4 rounded-xl">
+          <p class="text-[#F5F5F5] font-Inter font-bold text-[17px] leading-[21px]">Edit Profile</p>
+        </a>
       </div>
-    @endfor
     </div>
-
-    
- 
+      
   </section>
 
 @endsection
