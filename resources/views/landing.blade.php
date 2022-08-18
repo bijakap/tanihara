@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Example</title>
+    <title>Tanihara</title>
     <!-- Logo -->
     <link rel="icon" href="https://picsum.photos/200">
 
@@ -17,9 +17,11 @@
       <div class="flex justify-between px-[70px] pt-[17px] font-SourceSerifPro">
         <p class="font-bold text-[32px] leading-10 text-[#06AA51]">Logo</p>
         <p class="font-bold text-[32px] leading-10 text-[#06AA51]">Agrisol</p>
-        <button class="bg-transparent border-[2px] border-[#06AA51] py-3 px-6 rounded-xl font-Inter">
-          <p class="text-[#06AA51] font-bold leading-[21px] text-[17px]">Login</p>
-        </button>
+        <a href="/login">
+          <button class="bg-transparent border-[2px] border-[#06AA51] py-3 px-6 rounded-xl font-Inter">
+            <p class="text-[#06AA51] font-bold leading-[21px] text-[17px]">Login</p>
+          </button>
+        </a>
       </div>
       <div class="flex justify-center mt-10">
         <div class="self-center w-[500px] ml-3">

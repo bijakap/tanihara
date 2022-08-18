@@ -31,11 +31,11 @@ Route::get('profile', [ViewController::class, 'viewProfile']);
 
 
 // cant access link if not login
-Route::get('/auth', function () {
+Route::get('/auth', [ViewController::class, 'viewHome']
   // Only authenticated users may access this route...
-  return view('user.home');
-})->middleware('fireauth');
+
+)->middleware('fireauth');
 
 
 // test flush session
-Route::get('/flush', [FirebaseController::class, 'flushsession']);
+Route::get('/logout', [FirebaseController::class, 'flushsession']);
