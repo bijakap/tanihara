@@ -15,7 +15,7 @@
   <div class="py-[60px] px-[70px]">
     <ul class="flex flex-col md:flex-row list-none border-b-0 pl-0 mb-4" id="tabs-tabMeasure" role="tablist">
       <li class="flex-auto" role="presentation">
-        <a href="#tabs-addMeasure" class="w-full text-xl leading-tight inline-flex justify-center
+        <a href="#tabs-addMeasure" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
       border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
       focus:border-[#10733D] focus:border-b-2 active" id="tabs-add" data-bs-toggle="pill"
           data-bs-target="#tabs-addMeasure" role="tab" aria-controls="tabs-addMeasure" aria-selected="true">
@@ -27,7 +27,7 @@
       </li>
 
       <li class="nav-item flex-auto text-center" role="presentation">
-        <a href="#tabs-dataMeasure" class="w-full text-xl leading-tight inline-flex justify-center
+        <a href="#tabs-dataMeasure" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
       border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
       focus:border-[#10733D] focus:border-b-2" id="tabs-data" data-bs-toggle="pill" data-bs-target="#tabs-dataMeasure"
           role="tab" aria-controls="tabs-dataMeasure" aria-selected="true">
@@ -46,7 +46,7 @@
     <div class="tab-pane fade show active" id="tabs-addMeasure" role="tabpanel" aria-labelledby="tabs-add">
       <div class="flex flex-col justify-center items-center">
         <div>
-          <p>
+          <p class="text-xl font-SourceSansPro">
             Select your tools:
           </p>
           <div class="inline-block relative w-full max-w-sm mb-[30px]">
@@ -58,7 +58,7 @@
               </svg>
             </div>
 
-            <select class="block appearance-none w-full px-32 py-0.5 bg-white text-[#06AA51] font-semibold text-[17px] rounded-xl border-solid
+            <select class="block appearance-none w-full px-32 py-2 bg-white text-[#06AA51] font-semibold font-Inter text-[17px] rounded-xl border-solid
             border-2 border-[#06AA51] leading-tight focus:outline-none focus:shadow-outline">
               <option>NPK P201</option>
               <option>NPK P202</option>
@@ -74,26 +74,30 @@
         </div>
 
         <div>
-          <form class="w-full max-w-sm mb-[30px]">
-            LoRa.id device EUI
+          <form class="w-full max-w-sm mb-[30px] ">
+            <a class="font-SourceSansPro text-xl">
+              LoRa.id device EUI
+            </a>
             <input
-              class="px-16 py-0.5 bg-white font-semibold text-[17px] rounded-xl border-solid
-            border-2 border-[#06AA51] block appearance-none w-full inputmeasure leading-tight focus:outline-none focus:shadow-outline"
+              class="px-16 py-2 bg-white font-semibold text-[17px] rounded-xl border-solid
+            border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
               type="text">
         </div>
 
         <div>
-          <form class="w-full max-w-sm mb-[30px]">
-            LoRa.id device ID
+          <form class="w-full max-w-sm mb-[30px] ">
+            <a class="font-SourceSansPro text-xl">
+              LoRa.id device ID
+            </a>
             <input
-              class="px-16 py-0.5 bg-white font-semibold text-[17px] rounded-xl border-solid
+              class="px-16 py-2 bg-white font-semibold text-[17px] rounded-xl border-solid
             border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
               type="text">
         </div>
 
         <div>
           <button
-            class="mt-[30px] shadow bg-[#06AA51] hover:bg-[#10733D] focus:shadow-outline focus:outline-none text-white py-2 px-4 rounded-xl"
+            class="mt-[30px] font-Inter font-semibold shadow bg-[#06AA51] hover:bg-[#10733D] focus:shadow-outline focus:outline-none text-white py-2 px-11 rounded-xl"
             type="button">
             Submit
           </button>
@@ -102,14 +106,12 @@
       </div>
     </div>
 
-    <!-- Add Data Tab End -->
+    <!-- Add New Data Tab End -->
 
     <!-- My Data Tab Start -->
 
     <div class="tab-pane fade show active" id="tabs-dataMeasure" role="tabpanel" aria-labelledby="tabs-data">
       <div class="flex flex-col justify-center items-center">
-
-
         <div class="grid grid-cols-2 gap-[40px] place-content-center">
           <div>
             <button id="dropdownDefault" data-dropdown-toggle="dropdown"
@@ -122,20 +124,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -147,33 +149,35 @@
             <div id="dropdown"
               class="block h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -190,20 +194,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -215,33 +219,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -258,20 +264,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -283,33 +289,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -326,20 +334,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -351,33 +359,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -394,20 +404,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -419,33 +429,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -462,20 +474,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -487,33 +499,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -530,20 +544,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -555,33 +569,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
@@ -598,20 +614,20 @@
                     <path
                       d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
                   </svg>
-                  <p class="text-xl text-center">Cabai</p>
+                  <p class="text-xl text-center font-Inter">Cabai</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
                   <p>LoRa.id device EUI</p>
-                  <p>LoRa.id device ID</p>
-                  <p>LoRa.id device address</p>
+                  <p class="mt-2">LoRa.id device ID</p>
+                  <p class="mt-2">LoRa.id device address</p>
                 </div>
-                <div class="text-xl text-left mt-[25px]">
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
-                  <p>: XXXXX</p>
+                <div class="text-xl text-left mt-[25px] font-SourceSansPro">
+                  <p>: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
+                  <p class="mt-2">: xxxxx</p>
                 </div>
                 <div>
-                  <svg class="fill-current h-[44px] w-14 mx-auto mt-12" xmlns="http://www.w3.org/2000/svg"
+                  <svg class="fill-current h-[44px] w-14 mx-auto mt-14" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 320 512">
                     <path
                       d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
@@ -623,33 +639,35 @@
             <div id="dropdown"
               class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
-                <div class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-2 gap-4 text-xl pl-[50px]">
-                <div>
+                <div
+                  class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
+                  <div>
                     <p>N</p>
-                    <p>P</p>
-                    <p>K </p>
-                    <p>Moist</p>
+                    <p class="mt-3">P</p>
+                    <p class="mt-3">K </p>
+                    <p class="mt-3">Moist</p>
                   </div>
                   <div>
                     <p>: 100.00</p>
-                    <p>: 9.01</p>
-                    <p>: 71.00</p>
-                    <p>: 1.00</p>
+                    <p class="mt-3">: 9.01</p>
+                    <p class="mt-3">: 71.00</p>
+                    <p class="mt-3">: 1.00</p>
                   </div>
                   <div>
                     <p>pH</p>
-                    <p>Longtitude</p>
-                    <p>Latitude</p>
-                    <p>Time</p>
+                    <p class="mt-3">Longtitude</p>
+                    <p class="mt-3">Latitude</p>
+                    <p class="mt-3">Time</p>
                   </div>
                   <div>
                     <p>: 1.00</p>
-                    <p>: 107.613144</p>
-                    <p>: -6.905977</p>
-                    <p>: 06:57:34</p>
+                    <p class="mt-3">: 107.613144</p>
+                    <p class="mt-3">: -6.905977</p>
+                    <p class="mt-3">: 06:57:34</p>
                   </div>
                 </div>
-                <button class="rounded-[13px] bg-green-600 px-4 py-2 text-xl text-white mx-auto mt-[22px]">Check
+                <button
+                  class="rounded-[13px] bg-[#06AA51] px-4 py-2 text-[17px] font-Inter font-semibold tracking-wide text-white mx-auto">Check
                   Location</button>
               </div>
             </div>
