@@ -1,6 +1,12 @@
-<!-- History Page Start -->
+@extends('layouts.user_layout')
 
-<div class="flex flex-col justify-center items-center">
+@section('title', 'Tanihara - History')
+
+@section('script')
+@endsection
+
+@section('container')
+  <div class="flex flex-col justify-center items-center">
     <h1 class="text-[38px] font-SourceSansPro text-center mt-[50px]">Select your tools</h1>
     <h1 class="text-xl font-SourceSansPro text-center mt-1 mb-[53px]">Check on your plant's soil status</h1>
     <div class="grid grid-cols-2 gap-[40px] place-content-center">
@@ -1354,5 +1360,7 @@
       </div>
     </div>
   </div>
-
   <!-- History Page End -->
+@endsection
+
+

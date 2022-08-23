@@ -18,8 +18,6 @@
       </div>
     @endfor
     </div>
-
-    
  
   </section>
 

@@ -1,6 +1,14 @@
+@extends('layouts.user_layout')
+
+@section('title', 'Tanihara - Calculator')
+
+@section('script')
+@endsection
+
+@section('container')
 <!-- Calculator Page Start -->
 
-<h1 class="text-[38px] font-SourceSansPro text-center mt-[46px]">Calculator</h1>
+  <h1 class="text-[38px] font-SourceSansPro text-center mt-[46px]">Calculator</h1>
   <h1 class="text-xl font-SourceSansPro text-center mt-1 mb-[46px]">Dedicated for your plants need</h1>
 
   <div class="flex flex-col items-center">
@@ -169,3 +177,4 @@
     </div>
   </div>
   <!-- Calculator Page End -->
+  @endsection

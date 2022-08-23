@@ -45,9 +45,8 @@ class FirebaseController extends Controller
 
             // $newUser = $this->auth->createUserWithEmailAndPassword($email, $pass);
             $createdUser = $this->auth->createUser($userProperties);
-            
-            dd($createdUser);
-            // dd($userProperties);
+
+            return redirect("/login");
 
         } catch (\Throwable $e) {
             switch ($e->getMessage()) {
@@ -68,16 +67,45 @@ class FirebaseController extends Controller
         try {
             $signInResult = $this->auth->signInWithEmailAndPassword($request->email, $request->password);
             
+            //user session
+            
             $user = new User($signInResult->data());
+            Session::put('user',$user);
             //uid Session
             $loginuid = $signInResult->firebaseUserId();
             Session::put('uid',$loginuid);
-            
-            return redirect("/auth");
+            dd($user);
+            return redirect("/home");
         } catch (\Throwable $e) {
             dd($e->getMessage());
         }
     }
+
+    public function getLoginData(Request $request){
+        try {
+            // Provider type
+            $provider = $request->data['providerUserInfo'][0]['providerId'];
+            Session::put('provider', $provider);
+
+            // //uid Session
+            $user = [
+                "displayName" => $request->data['displayName'],
+                "photoUrl" => $request->data['photoUrl'],
+                'localID'=> $request->data['localId'],
+            ];
+            Session::put('user',$user);
+            // //uid Session
+            $loginuid = $request->uid;
+            Session::put('uid',$loginuid);
+
+            return response("Save Data Completed", 200);
+        } catch (\Throwable $e) {
+            // dd($e->getMessage());
+            return response("failed save data", 400);
+        }
+    }
+
+    
 
     public function flushSession(){
         Session::flush();

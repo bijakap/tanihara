@@ -32,11 +32,24 @@ class ViewController extends Controller
         return view('user.measure');
     }
 
+    public function viewHistory(){
+        return view('user.history');
+    }
+
+    public function viewCalculator(){
+        return view('user.calculator');
+    }
+
+
     public function viewNotification(){
         return view('user.notification');
     }
 
     public function viewProfile(){
         return view('user.profile');
+    }
+
+    public function viewEditProfile(){
+        return view('user.editprofile');
     }
 }
