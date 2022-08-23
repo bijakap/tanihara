@@ -13,7 +13,7 @@
       <p class="text-center mt-[24px] font-SourceSerifPro text-[#10733D] text-[42px] leading-[53px] font-semibold">Nama User</p>
       <p class="text-center font-SourceSansPro text-[#10733D] text-[22px] leading-[28px] font-normal">EmailUser@gmail.com</p>
       <div class="flex justify-center mt-[30px]">
-        <a href="#" class="bg-[#06AA51] py-3 px-4 rounded-xl">
+        <a href="/profile/edit" class="bg-[#06AA51] py-3 px-4 rounded-xl">
           <p class="text-[#F5F5F5] font-Inter font-bold text-[17px] leading-[21px]">Edit Profile</p>
         </a>
       </div>

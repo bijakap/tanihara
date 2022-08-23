@@ -13,7 +13,7 @@
 
 
         <!-- Load Config Firebase -->
-        <script type="text/javascript" src="{{ asset('assets/js/firebase_config.js') }}"></script>
+        <script type="module" src="{{ asset('assets/js/firebase_config.js') }}"></script>
 
 
     </head>

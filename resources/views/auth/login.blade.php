@@ -12,6 +12,7 @@
         @vite('resources/css/app.css')
         <!-- Load Config Firebase -->
         <script type="module" src="{{ asset('assets/js/firebase_config.js') }}"></script>
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     </head>
     <body class="bg-white">
@@ -119,6 +120,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="{{ asset('assets/js/loginUIController.js') }}"></script>
       <script type="module" src="{{ asset('assets/js/LoginController.js') }}"></script>
-    
+      
    </body>
 </html>
