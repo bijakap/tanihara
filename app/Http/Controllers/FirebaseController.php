@@ -74,7 +74,7 @@ class FirebaseController extends Controller
             //uid Session
             $loginuid = $signInResult->firebaseUserId();
             Session::put('uid',$loginuid);
-            dd($user);
+            // dd($user);
             return redirect("/home");
         } catch (\Throwable $e) {
             dd($e->getMessage());

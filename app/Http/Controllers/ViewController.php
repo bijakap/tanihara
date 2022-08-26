@@ -20,12 +20,13 @@ class ViewController extends Controller
     }
 
     public function viewHome(){
-        $chart = new weeklyChart;
-        $chart->labels(['Jan', 'Feb', 'Mar']);
-        $chart->dataset('Sample', 'line', [10, 25, 13])
-        ->color("rgb(255, 99, 132)")
-        ->backgroundcolor("rgb(255, 99, 132)");
-        return view('user.home', [ 'chart' => $chart ]);
+        // $chart = new weeklyChart;
+        // $chart->labels(['Jan', 'Feb', 'Mar']);
+        // $chart->dataset('Sample', 'line', [10, 25, 13])
+        // ->color("rgb(255, 99, 132)")
+        // ->backgroundcolor("rgb(255, 99, 132)");
+        $data = [10, 25, 13, 20, 20, 60, 50];
+        return view('user.home', [ 'data' => $data ]);
     }
 
     public function viewMeasure(){

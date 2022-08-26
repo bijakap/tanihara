@@ -2,13 +2,17 @@
 
 @section('title', 'Measure - Add New Data')
 
+@section('script')
+  
+@endsection
+
 @section('container')
   <!-- Measure Tab Start -->
 
   <div class="py-[60px] px-[70px]">
     <ul class="flex flex-col md:flex-row list-none border-b-0 pl-0 mb-4" id="tabs-tabMeasure" role="tablist">
       <li class="flex-auto" role="presentation">
-        <a href="#tabs-addMeasure" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
+        <button id="button-newData" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
       border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
       focus:border-[#10733D] focus:border-b-2 active" id="tabs-add" data-bs-toggle="pill"
           data-bs-target="#tabs-addMeasure" role="tab" aria-controls="tabs-addMeasure" aria-selected="true">
@@ -20,7 +24,7 @@
       </li>
 
       <li class="nav-item flex-auto text-center" role="presentation">
-        <a href="#tabs-dataMeasure" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
+        <button id="button-myData" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
       border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
       focus:border-[#10733D] focus:border-b-2" id="tabs-data" data-bs-toggle="pill" data-bs-target="#tabs-dataMeasure"
           role="tab" aria-controls="tabs-dataMeasure" aria-selected="true">
@@ -28,7 +32,7 @@
             stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-          </svg>My Data</a>
+          </svg>My Data</button>
       </li>
     </ul>
   </div>
@@ -36,7 +40,7 @@
   <!-- Add New Data Tab Start -->
 
   <div class="tab-content" id="tabs-tabContentMeasure">
-    <div class="tab-pane fade show active" id="tabs-addMeasure" role="tabpanel" aria-labelledby="tabs-add">
+    <div class="tab-pane fade show active block" id="tabs-addMeasure" role="tabpanel" aria-labelledby="tabs-add">
       <div class="flex flex-col justify-center items-center">
         <div>
           <p class="text-xl font-SourceSansPro">
@@ -103,7 +107,7 @@
 
     <!-- My Data Tab Start -->
 
-    <div class="tab-pane fade show active" id="tabs-dataMeasure" role="tabpanel" aria-labelledby="tabs-data">
+    <div class="tab-pane fade show active hidden" id="tabs-dataMeasure" role="tabpanel" aria-labelledby="tabs-data">
       <div class="flex flex-col justify-center items-center">
         <div class="grid grid-cols-2 gap-[40px] place-content-center">
           <div>
@@ -674,4 +678,20 @@
   </div>
 
   <!-- Measure Tab End -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  <script>
+    $("#button-newData").click(()=>{
+
+      $("#tabs-addMeasure").removeClass("hidden").addClass("block")
+
+      $("#tabs-dataMeasure").removeClass("block").addClass("hidden")
+    })
+
+    $("#button-myData").click(()=>{
+      $("#tabs-dataMeasure").removeClass("hidden").addClass("block")
+
+      $("#tabs-addMeasure").removeClass("block").addClass("hidden")
+
+    })
+  </script>
 @endsection
