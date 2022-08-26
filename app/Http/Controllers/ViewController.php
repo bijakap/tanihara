@@ -53,4 +53,8 @@ class ViewController extends Controller
     public function viewEditProfile(){
         return view('user.editprofile');
     }
+
+    public function viewAbout(){
+        return view('about');
+    }
 }

@@ -21,6 +21,7 @@ Route::post('login', [FirebaseController::class, 'login']);
 Route::post('loginByProvider', [FirebaseController::class, 'getLoginData']);
 Route::get('register', [ViewController::class, 'registerView']);
 Route::post('register', [FirebaseController::class, 'signUp']);
+Route::get('about-us', [ViewController::class, 'viewAbout']);
 
 route::middleware(['fireauth'])->group(function() {
   Route::get('home', [ViewController::class, 'viewHome']);

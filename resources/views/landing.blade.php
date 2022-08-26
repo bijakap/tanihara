@@ -27,9 +27,11 @@
         <div class="self-center w-[500px] ml-3">
           <p class="font-SourceSerifPro font-semibold text-[42px] leading-[53px] text-white">Track your plant health</p>
           <p class="font-SourceSansPro font-normal text-[20px] leading-[25px] text-white">Understand more about your plants’ soil by using a device that will always update its status to make your gardening  life easier.</p>
-          <button class="bg-white rounded-xl py-3 px-[30px] mt-6">
-            <p class="text-[#06AA51] font-bold text-[17px] leading-[21px]">Get Started</p>
-          </button>
+          <a href="/login">
+            <button class="bg-white rounded-xl py-3 px-[30px] mt-6">
+              <p class="text-[#06AA51] font-bold text-[17px] leading-[21px]">Get Started</p>
+            </button>
+          </a>
         </div>
         <div>
           <img class="pointer-events-none" src="{{ asset('assets/images/Landing Page Pic.png') }}">
@@ -102,7 +104,7 @@
       <div class="flex justify-center gap-[80px] text-white pt-32">
         <p class="font-bold text-[32px] leading-[40px] font-SourceSerifPro">Logo</p>
         <p class="font-normal text-[20px] leading-[25px] font-SourceSansPro self-center">Check our app</p>
-        <p class="font-normal text-[20px] leading-[25px] font-SourceSansPro self-center">About us</p>
+        <a href="/about-us" class="font-normal text-[20px] leading-[25px] font-SourceSansPro self-center">About us</a>
         <p class="font-normal text-[20px] leading-[25px] font-SourceSansPro self-center">Contact us</p>
       </div>
       <div class="flex justify-center pb-5">
