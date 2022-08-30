@@ -13,21 +13,21 @@
     <ul class="flex flex-col md:flex-row list-none border-b-0 pl-0 mb-4" id="tabs-tabMeasure" role="tablist">
       <li class="flex-auto" role="presentation">
         <button id="button-newData" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
-      border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
-      focus:border-[#10733D] focus:border-b-2 active" id="tabs-add" data-bs-toggle="pill"
+        border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
+        focus:border-[#10733D] focus:border-b-2 active" id="tabs-add" data-bs-toggle="pill"
           data-bs-target="#tabs-addMeasure" role="tab" aria-controls="tabs-addMeasure" aria-selected="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-[15px]" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
           </svg>Add New Data
-        </a>
+          </a>
       </li>
 
       <li class="nav-item flex-auto text-center" role="presentation">
         <button id="button-myData" class="w-full text-xl font-SourceSansPro leading-tight inline-flex justify-center
-      border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
-      focus:border-[#10733D] focus:border-b-2" id="tabs-data" data-bs-toggle="pill" data-bs-target="#tabs-dataMeasure"
-          role="tab" aria-controls="tabs-dataMeasure" aria-selected="true">
+        border-x-0 border-t-0 border-b-[1px] border-[#B5B5B5] px-6 py-3 my-2 hover:bg-[#67D198] hover:bg-opacity-20
+        focus:border-[#10733D] focus:border-b-2" id="tabs-data" data-bs-toggle="pill"
+          data-bs-target="#tabs-dataMeasure" role="tab" aria-controls="tabs-dataMeasure" aria-selected="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-[15px]" fill="none" viewBox="0 0 24 24"
             stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -56,7 +56,7 @@
             </div>
 
             <select class="block appearance-none w-full px-32 py-2 bg-white text-[#06AA51] font-semibold font-Inter text-[17px] rounded-xl border-solid
-            border-2 border-[#06AA51] leading-tight focus:outline-none focus:shadow-outline">
+              border-2 border-[#06AA51] leading-tight focus:outline-none focus:shadow-outline">
               <option>NPK P201</option>
               <option>NPK P202</option>
               <option>NPK P203</option>
@@ -76,8 +76,8 @@
               LoRa.id device EUI
             </a>
             <input
-              class="px-16 py-2 bg-white font-semibold text-[17px] rounded-xl border-solid
-            border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
+              class="px-16 py-2 text-center bg-white font-semibold text-[17px] rounded-xl border-solid
+              border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
               type="text">
         </div>
 
@@ -87,8 +87,8 @@
               LoRa.id device ID
             </a>
             <input
-              class="px-16 py-2 bg-white font-semibold text-[17px] rounded-xl border-solid
-            border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
+              class="px-16 py-2 text-center bg-white font-semibold text-[17px] rounded-xl border-solid
+              border-2 border-[#06AA51] block appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
               type="text">
         </div>
 
@@ -110,8 +110,8 @@
     <div class="tab-pane fade show active hidden" id="tabs-dataMeasure" role="tabpanel" aria-labelledby="tabs-data">
       <div class="flex flex-col justify-center items-center">
         <div class="grid grid-cols-2 gap-[40px] place-content-center">
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu()"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -143,8 +143,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="block h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data"
+              class="block dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -180,8 +180,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu2()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -213,8 +213,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data2"
+              class="block dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -250,8 +250,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu3()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -283,8 +283,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data3"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -320,8 +320,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu4()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -353,8 +353,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data4"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -390,8 +390,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu5()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -423,8 +423,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data5"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -460,8 +460,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu6()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -493,8 +493,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data6"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -530,8 +530,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu7()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -563,8 +563,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data7"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -600,8 +600,8 @@
             </div>
           </div>
 
-          <div>
-            <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+          <div id="dropdown-wrapper">
+            <button onclick="toggleMenu8()" id="button-data"
               class="inline-flex h-[150px] w-[580px] items-center rounded-[20px] bg-[#06AA51] px-4 py-2.5 text-center text-sm text-white"
               type="button">
               <div class="grid grid-flow-col gap-4 text-xl h-[150px] w-[580px]">
@@ -633,8 +633,8 @@
               </div>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdown"
-              class="hidden h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
+            <div id="data8"
+              class="hidden dropdown-content h-[250px] w-[580px] divide-y divide-gray-100 rounded-[20px] bg-[#F6F6F6] shadow">
               <div class="flex flex-col justify-center">
                 <div
                   class="mb-[22px] mt-[27px] grid grid-flow-col grid-cols-4 gap-4 text-xl px-[50px] font-SourceSansPro">
@@ -678,20 +678,95 @@
   </div>
 
   <!-- Measure Tab End -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    $("#button-newData").click(()=>{
+    $("#button-newData").click(() => {
 
       $("#tabs-addMeasure").removeClass("hidden").addClass("block")
 
       $("#tabs-dataMeasure").removeClass("block").addClass("hidden")
     })
 
-    $("#button-myData").click(()=>{
+    $("#button-myData").click(() => {
       $("#tabs-dataMeasure").removeClass("hidden").addClass("block")
 
       $("#tabs-addMeasure").removeClass("block").addClass("hidden")
 
     })
+
+    var data = document.getElementById("data");
+    var data2 = document.getElementById("data2");
+    var data3 = document.getElementById("data3");
+    var data4 = document.getElementById("data4");
+    var data5 = document.getElementById("data5");
+    var data6 = document.getElementById("data6");
+    var data7 = document.getElementById("data7");
+    var data8 = document.getElementById("data8");
+
+    // open/close the menu when the user clicks on the button
+    function toggleMenu() {
+      if (data.classList.contains('hidden')) {
+        data.classList.remove('hidden');
+      } else {
+        data.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu2() {
+      if (data2.classList.contains('hidden')) {
+        data2.classList.remove('hidden');
+      } else {
+        data2.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu3() {
+      if (data3.classList.contains('hidden')) {
+        data3.classList.remove('hidden');
+      } else {
+        data3.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu4() {
+      if (data4.classList.contains('hidden')) {
+        data4.classList.remove('hidden');
+      } else {
+        data4.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu5() {
+      if (data5.classList.contains('hidden')) {
+        data5.classList.remove('hidden');
+      } else {
+        data5.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu6() {
+      if (data6.classList.contains('hidden')) {
+        data6.classList.remove('hidden');
+      } else {
+        data6.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu7() {
+      if (data7.classList.contains('hidden')) {
+        data7.classList.remove('hidden');
+      } else {
+        data7.classList.add('hidden');
+      }
+    }
+
+    function toggleMenu8() {
+      if (data8.classList.contains('hidden')) {
+        data8.classList.remove('hidden');
+      } else {
+        data8.classList.add('hidden');
+      }
+    }
   </script>
 @endsection
